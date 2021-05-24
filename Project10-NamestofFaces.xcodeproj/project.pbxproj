@@ -13,7 +13,7 @@
 		0F7CE8F3265A0C4000259FCE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F7CE8F1265A0C4000259FCE /* Main.storyboard */; };
 		0F7CE8F5265A0C4200259FCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F7CE8F4265A0C4200259FCE /* Assets.xcassets */; };
 		0F7CE8F8265A0C4200259FCE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F7CE8F6265A0C4200259FCE /* LaunchScreen.storyboard */; };
-		0F7CE901265A1CA100259FCE /* PersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7CE900265A1CA100259FCE /* PersonCell.swift */; };
+		0F7CE905265B2E4800259FCE /* PersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7CE904265B2E4800259FCE /* PersonCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +25,7 @@
 		0F7CE8F4265A0C4200259FCE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F7CE8F7265A0C4200259FCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0F7CE8F9265A0C4200259FCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0F7CE900265A1CA100259FCE /* PersonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCell.swift; sourceTree = "<group>"; };
+		0F7CE904265B2E4800259FCE /* PersonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +62,7 @@
 				0F7CE8ED265A0C4000259FCE /* SceneDelegate.swift */,
 				0F7CE8EF265A0C4000259FCE /* ViewController.swift */,
 				0F7CE8F1265A0C4000259FCE /* Main.storyboard */,
-				0F7CE900265A1CA100259FCE /* PersonCell.swift */,
+				0F7CE904265B2E4800259FCE /* PersonCell.swift */,
 				0F7CE8F4265A0C4200259FCE /* Assets.xcassets */,
 				0F7CE8F6265A0C4200259FCE /* LaunchScreen.storyboard */,
 				0F7CE8F9265A0C4200259FCE /* Info.plist */,
@@ -142,7 +142,7 @@
 			files = (
 				0F7CE8F0265A0C4000259FCE /* ViewController.swift in Sources */,
 				0F7CE8EC265A0C4000259FCE /* AppDelegate.swift in Sources */,
-				0F7CE901265A1CA100259FCE /* PersonCell.swift in Sources */,
+				0F7CE905265B2E4800259FCE /* PersonCell.swift in Sources */,
 				0F7CE8EE265A0C4000259FCE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
