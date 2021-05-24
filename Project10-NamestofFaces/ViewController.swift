@@ -34,7 +34,7 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
         cell.name.text = person.name
         
         let path = getDocumentsDirectory().appendingPathComponent(person.image)
-        //Create uiImage from persons image file name 
+        //Create uiImage from persons image file name
         cell.imageView.image = UIImage(contentsOfFile: path.path)
         
         cell.imageView.layer.borderColor = UIColor(white: 0, alpha: 0.3).cgColor
@@ -77,6 +77,22 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
     func getDocumentsDirectory() -> URL {
         let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         return paths[0]
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let person = people[indexPath.item]
+        
+        let ac = UIAlertController(title: "Rename person", message: nil, preferredStyle: .alert)
+        ac.addTextField()
+        
+        ac.addAction(UIAlertAction(title: "OK", style: .default){ [weak self, weak ac] _ in
+            guard let newName = ac?.textFields?[0].text else {return}
+            person.name = newName
+            self?.collectionView.reloadData()
+        })
+        
+        ac.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+        present(ac, animated: true)
     }
     
 
