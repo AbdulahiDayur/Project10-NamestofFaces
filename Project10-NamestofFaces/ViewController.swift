@@ -29,6 +29,8 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
             fatalError("Unable to dequeue PersonCell")
         }
         
+        // Everytime a picture is imported we can create a person object for it
+        // and add it to an array to shown in the collectionView
         let person = people[indexPath.item]
         
         cell.name.text = person.name
@@ -92,9 +94,17 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
         })
         
         ac.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+        ac.addAction(UIAlertAction(title: "Delete", style: .default, handler: { _ in
+            self.people.remove(at: indexPath.item)
+            self.collectionView.reloadData()
+        }))
         present(ac, animated: true)
     }
     
+//    @objc func delImage(action: UIAlertAction, num: Int) {
+//        people.remove(at: num)
+//        collectionView.reloadData()
+//    }
 
 
 }
